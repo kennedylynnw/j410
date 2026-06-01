@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You Spin Me Right Round</title>
+
+    <!-- ============================================
+         GOOGLE FONTS
+         - To change fonts, visit fonts.google.com
+         - Replace the font names in the URL and in style.css
+         ============================================ -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+<link rel="icon" type="image/png" href="img/favicon410.png"> 
+
+</head> 
+<body>
+    <!-- ============================================
+         NAVIGATION: Fixed header with mobile toggle
+         - Change the nav links to match your story sections
+         - The hamburger menu appears on screens under 768px
+         ============================================ -->
+    <nav class="navbar">
+        <div class="nav-container">
+          <div class="logo">
+  <img src="img/logo.png" width="65" height="60" alt="">
+</div>
+            <button class="hamburger" onclick="toggleNav()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#hero">ABOUT</a></li>
+                <li><a href="#photos">GUIDE</a></li>
+                <li><a href="#audio">WORD ON THE STREET</a></li>
+                <li><a href="#video">POP PRINCESS</a></li>
+                <li><a href="#infographic">GATEWAY ALBUM</a></li>
+                <li><a href="#footer">CREDITS</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ============================================
+         HERO SECTION: Full-screen image + headline
+         - Change the background image in style.css
+         - Look for ".hero" in the CSS file
+         - Edit the headline and deck text below
+         ============================================ -->
+    <section id="hero" class="hero">
+        <div class="vinyl-wrapper">
+            <div class="hero-content">
+                <h1>You Spin Me Right Round</h1>
+                <p class="deck">College kids grew up on streaming music. Now they're buying records.</p>
+                <p class="byline">BY: KENNEDY WALKER | MAY 20, 2026</p>
+            </div>
+            <svg class="record-needle" viewBox="0 0 180 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <!-- Counterweight -->
+                <line x1="150" y1="30" x2="170" y2="9" stroke="#777" stroke-width="5" stroke-linecap="round"/>
+                <circle cx="174" cy="5" r="8" fill="#444" stroke="#666" stroke-width="1.5"/>
+                <!-- Mounting base -->
+                <circle cx="150" cy="30" r="17" fill="#1e1e1e" stroke="#4a4a4a" stroke-width="1.5"/>
+                <circle cx="150" cy="30" r="9" fill="#2e2e2e" stroke="#5a5a5a" stroke-width="1"/>
+                <circle cx="150" cy="30" r="3.5" fill="#777"/>
+                <!-- Tonearm depth shadow -->
+                <line x1="150" y1="30" x2="42" y2="142" stroke="#000" stroke-width="8" stroke-linecap="round" opacity="0.4"/>
+                <!-- Tonearm body -->
+                <line x1="150" y1="30" x2="42" y2="142" stroke="#666" stroke-width="5" stroke-linecap="round"/>
+                <!-- Tonearm highlight -->
+                <line x1="150" y1="30" x2="42" y2="142" stroke="#bbb" stroke-width="1.5" stroke-linecap="round"/>
+                <!-- Headshell cartridge -->
+                <rect x="29" y="136" width="26" height="13" rx="3" fill="#3a3a3a" stroke="#777" stroke-width="1" transform="rotate(44 42 142)"/>
+                <!-- Stylus -->
+                <line x1="42" y1="148" x2="42" y2="162" stroke="#aaa" stroke-width="1.5" stroke-linecap="round"/>
+                <polygon points="42,166 38,162 42,157 46,162" fill="#ddd"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- ============================================
+         STORY TEXT SECTION
+         - Write your full story here
+         - Use multiple <p> tags for multiple paragraphs
+         ============================================ -->
+    <section class="section story-text">
+        <p>According to the Recording Industry Association of American <a href="https://www.riaa.com/" target="_blank">RIAA</a>, vinyl sales in the United States surpassed $1 billion in 2025, marking the first time since the early 1980s that the format has reached this milestone.  This growth isn’t sudden, it actually represents the 19th consecutive year of increasing vinyl sales. 
+</p>
+        <p>I got my first vinyl this past Christmas. Let me set the scene. It's Christmas Eve night at my dad's side. We're doing white elephant, the party game where everyone brings a wrapped gift and the whole night turns into a cheerful little war of swapping and stealing. Most gifts are candles or soaps and someone even bought a Costco snack pack, but sitting there in all its glory, the masterpiece Purple Rain (1984) by Prince. Nobody looked twice at it. Which meant it was all mine. Here's the thing though, I didn't own a turntable. I'd never bought a record in my life. My entire music library lives on my phone, neatly organized by Apple Music for a forced price of $10.99 a month. This night bought me a question that began to pick apart my brain:  </p>
+        <p></p>
+        <blockquote>Do people my age still listen to vinyl, let alone care to collect? 
+</blockquote>
+        <p>In an era where streaming has made music more accessible than ever, it has also made it feel increasingly disposable. Why is Gen Z turning to vinyl? What is the story behind collecting vinyl as a college kid? Turntables in a dorm room? The growing popularity of vinyl in Gen Z suggests that listeners are pushing back against that convenience, seeking something more meaningful and tangible.
+            <p> In <strong>You Spin Me Right Round</strong>, I dive into the importance of vinyl and what it really means to the Gen Z collectors in this age of physical v.s. digital. </p>
+    </section>
+
+    <!-- ============================================
+         PARALLAX DIVIDER
+         - Change the background image in style.css
+         - Look for ".parallax-1"
+         ============================================ -->
+    <div class="parallax-divider parallax-1"></div>
+
+    <!-- ============================================
+         PHOTOS SECTION: Slideshow gallery
+         - Add/remove <div class="slide"> blocks for each photo
+         - Update the img src and alt text for each photo
+         - The caption text appears below each photo
+         ============================================ -->
+    <section id="photos" class="section">
+        <h2>An Unnecessarily Detailed Guide to Playing a Record for Noobs</h2>
+        <p class="section-intro">This collection follows Ben Andrew's easy step-by-step guide to nudge Gen Z beginners into the world of vinyl, from buying your first record player to starting a personal collection. </p>
+        <div class="slideshow">
+            <div class="slide active">
+                <img src="img/photo1.jpeg" alt="Step One: Choose the record that will set your mood for the next 40-45 minutes (depending on the album). Here, Ben Andrews, a 2nd year software engineer major, browses through his vinyl collection. 5/12/26">
+                <p class="caption"><strong>Step One:</strong> Choose the record that will set your mood for the next 40-45 minutes (depending on the album). Here, Ben Andrews, a 2nd year software engineer major, browses through his vinyl collection. 5/12/26</p>
+            </div>
+            <div class="slide">
+                <img src="img/photo2.jpg" alt="Step Two: Time to commit to the album. Ben selects MM..FOOD by MF DOOM and carefully pulls it from its sleeve, bringing a mix of hip-hop, jazzy beats and sharp lyrics to your ears. “You can’t skip on vinyl, you have to sit and listen and experience how the artist wanted” Ben says 5/12/26">
+                <p class="caption"><strong>Step Two:</strong> Time to commit to the album. Ben selects MM..FOOD by MF DOOM and carefully pulls it from its sleeve, bringing a mix of hip-hop, jazzy beats and sharp lyrics to your ears. “You can’t skip on vinyl, you have to sit and listen and experience how the artist wanted” Ben says 5/12/26</p>
+            </div>
+            <div class="slide">
+                <img src="img/photo3.jpeg" alt="Step Three: Place the record onto the turntable and try NOT to leave fingerprints. As Ben places MM..FOOD down, and presses play, you can finally watch the art start to spin. This part of the ritual becomes part of the experience. 5/12/26">
+                <p class="caption"><strong>Step Three:</strong> Place the record onto the turntable and try NOT to leave fingerprints. As Ben places MM..FOOD down, and presses play, you can finally watch the art start to spin. This part of the ritual becomes part of the experience. 5/12/26</p>
+            </div>
+
+            <div>
+            <div class="slide">
+                <img src="img/photo4.jpeg" atl="Step Four: Listen, dance and let your music become part of your space. Here on Ben’s apartment wall are some of his favorite vinyls from this month. 5/12/26">
+                <p class="caption"><strong>Step Four:</strong> Listen, dance and let your music become part of your space. Here on Ben’s apartment wall are some of his favorite vinyls from this month. 5/12/26</p>
+            </div>
+        <div>
+            <div class="slide">
+                <img src="img/photo5.jpg" atl="Step Five: As the record comes to an end, you know what to do. Ben lifts the cover to pick a new album. Wash, rinse, repeat. 5/12/26">
+                <p class="caption"><strong>Step Five:</strong> As the record comes to an end, you know what to do. Ben lifts the cover to pick a new album. Wash, rinse, repeat. 5/12/26</p>
+
+            </div>
+        
+        </div>
+        <div class="slide-controls">
+            <button onclick="changeSlide(-1)">&#8592;</button>
+            <span class="slide-counter">
+                <span id="current-slide">1</span> / <span id="total-slides">3</span>
+            </span>
+            <button onclick="changeSlide(1)">&#8594;</button>
+        </div>
+    </section>
+
+    <!-- ============================================
+         PARALLAX DIVIDER
+         - Change the background image in style.css
+         - Look for ".parallax-2"
+         ============================================ -->
+    <div class="parallax-divider parallax-2"></div>
+
+    <!-- ============================================
+         AUDIO SECTION: Clickable speaker images
+         - For each speaker you need TWO image files:
+             img/rollover/1.gif  (animated, shown by default)
+             img/rollover/1.jpg  (still, shown on hover)
+         - Update the audio src to your mp3 files
+         - Update the alt text and label to the speaker's name
+         - Click image to play | Double-click to pause
+         - Only one clip will play at a time
+         ============================================ -->
+    <section id="audio" class="section alt-bg">
+        <h2>WORD ON THE STREET</h2>
+        <p class="section-intro">"What does owning phsyical music mean to you?" </p>
+
+        <!-- Hidden audio elements — triggered by clicking the images below -->
+        <audio id="audio_1"><source src="audio/audio:1.m4a"></audio>
+        <audio id="audio_2"><source src="audio/audio:2.m4a"></audio>
+        <audio id="audio_3"><source src="audio/audio:3.m4a" ></audio>
+
+        <div class="audio-board">
+            <div class="audio-speaker">
+                <img src="img/GIF.IMG1.gif" class="rollover" alt="Ben Andrews"
+                    onclick="document.getElementById('audio_1').play(); return false;"
+                    ondblclick="document.getElementById('audio_1').pause(); return false;">
+                <p class="audio-label">Ben Andrews</p>
+            </div>
+            <div class="audio-speaker">
+                <img src="img/GIF.IMG2.gif" class="rollover" alt="Corbin Fuchs"
+                    onclick="document.getElementById('audio_2').play(); return false;"
+                    ondblclick="document.getElementById('audio_2').pause(); return false;">
+                <p class="audio-label">Corbin Fuchs</p>
+            </div>
+            <div class="audio-speaker">
+                <img src="img/GIF.IMG3.gif" class="rollover" alt="Natalia Lugassy"
+                    onclick="document.getElementById('audio_3').play(); return false;"
+                    ondblclick="document.getElementById('audio_3').pause(); return false;">
+                <p class="audio-label">Natalia Lugassy</p>
+            </div>
+        </div>
+        <p class="audio-instructions">CLICK AN IMAGE TO PLAY &nbsp;|&nbsp; DOUBLE-CLICK TO PAUSE</p>
+    </section>
+
+    <!-- ============================================
+         PARALLAX DIVIDER
+         - Change the background image in style.css
+         - Look for ".parallax-3"
+         ============================================ -->
+    <div class="parallax-divider parallax-3"></div>
+
+    <!-- ============================================
+         VIDEO SECTION: Embedded video player
+         - Update src to your video file path
+         - Update poster to a thumbnail image
+         ============================================ -->
+    <section id="video" class="section">
+        <h2>The Pop Princess Persona</h2>
+        <p class="section-intro">Meet Natalie, a Cal Poly 2nd year student with a vinyl collection that goes far deeper than her “pop princess persona."</p>
+        <div class="video-wrapper">
+            <video controls poster="img/poster.JPEG">
+                <source src="video/video1.mp4" type="video/mp4">
+                Your browser does not support video.
+                
+            </video>
+        <blockquote>"I love owning physical copies of albums because of their timelessness. It's great knowing that even if an online streaming service is down, I can still listen to this music I love."</blockquote>
+        </div>
+    </section>
+
+    <!-- ============================================
+         INFOGRAPHIC SECTION (OPTIONAL)
+         - To use: delete the comment tags surrounding the section
+           below (the standalone lines that read: less-than !dash-dash
+           and dash-dash greater-than)
+         - Paste your embed code (Datawrapper, Flourish,
+           Infogram, etc.) where indicated
+         - To skip: leave this section as-is
+         ============================================ -->
+
+    <section id="infographic" class="section alt-bg">
+        <h2>The Record that Started the Collection</h2>
+        <p class="section-intro">"What was your gateway vinyl?" Here is a collection of people's first bought albums, and the first songs that kicks them off.</p>
+        <div class="infographic-wrapper" style="text-align:center;">
+            <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/playlist/the-record-that-started-the-collection/pl.u-6mo4164FByGB2jK"></iframe>
+        </div>
+    </section>
+
+    <!-- ============================================
+         FOOTER: Credits and contact info
+         - Edit your name, date, and email below
+         ============================================ -->
+    <footer id="footer">
+        <div class="footer-vinyls" aria-hidden="true">
+            <svg class="vinyl" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="30" cy="30" r="29" fill="#1a1a1a" stroke="#333" stroke-width="1"/>
+                <circle cx="30" cy="30" r="22" fill="none" stroke="#2a2a2a" stroke-width="1.5"/>
+                <circle cx="30" cy="30" r="17" fill="none" stroke="#2a2a2a" stroke-width="1.5"/>
+                <circle cx="30" cy="30" r="12" fill="none" stroke="#2a2a2a" stroke-width="1.5"/>
+                <circle cx="30" cy="30" r="7" fill="#c0392b"/>
+                <circle cx="30" cy="30" r="2.5" fill="#1a1a1a"/>
+            </svg>
+            <svg class="vinyl" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="30" cy="30" r="29" fill="#1a1a1a" stroke="#333" stroke-width="1"/>
+                <circle cx="30" cy="30" r="22" fill="none" stroke="#2a2a2a" stroke-width="1.5"/>
+                <circle cx="30" cy="30" r="17" fill="none" stroke="#2a2a2a" stroke-width="1.5"/>
+                <circle cx="30" cy="30" r="12" fill="none" stroke="#2a2a2a" stroke-width="1.5"/>
+                <circle cx="30" cy="30" r="7" fill="#c0392b"/>
+                <circle cx="30" cy="30" r="2.5" fill="#1a1a1a"/>
+            </svg>
+            <svg class="vinyl" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="30" cy="30" r="29" fill="#1a1a1a" stroke="#333" stroke-width="1"/>
+                <circle cx="30" cy="30" r="22" fill="none" stroke="#2a2a2a" stroke-width="1.5"/>
+                <circle cx="30" cy="30" r="17" fill="none" stroke="#2a2a2a" stroke-width="1.5"/>
+                <circle cx="30" cy="30" r="12" fill="none" stroke="#2a2a2a" stroke-width="1.5"/>
+                <circle cx="30" cy="30" r="7" fill="#c0392b"/>
+                <circle cx="30" cy="30" r="2.5" fill="#1a1a1a"/>
+            </svg>
+            <svg class="vinyl" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="30" cy="30" r="29" fill="#1a1a1a" stroke="#333" stroke-width="1"/>
+                <circle cx="30" cy="30" r="22" fill="none" stroke="#2a2a2a" stroke-width="1.5"/>
+                <circle cx="30" cy="30" r="17" fill="none" stroke="#2a2a2a" stroke-width="1.5"/>
+                <circle cx="30" cy="30" r="12" fill="none" stroke="#2a2a2a" stroke-width="1.5"/>
+                <circle cx="30" cy="30" r="7" fill="#c0392b"/>
+                <circle cx="30" cy="30" r="2.5" fill="#1a1a1a"/>
+            </svg>
+            <svg class="vinyl" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="30" cy="30" r="29" fill="#1a1a1a" stroke="#333" stroke-width="1"/>
+                <circle cx="30" cy="30" r="22" fill="none" stroke="#2a2a2a" stroke-width="1.5"/>
+                <circle cx="30" cy="30" r="17" fill="none" stroke="#2a2a2a" stroke-width="1.5"/>
+                <circle cx="30" cy="30" r="12" fill="none" stroke="#2a2a2a" stroke-width="1.5"/>
+                <circle cx="30" cy="30" r="7" fill="#c0392b"/>
+                <circle cx="30" cy="30" r="2.5" fill="#1a1a1a"/>
+            </svg>
+            <svg class="vinyl" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="30" cy="30" r="29" fill="#1a1a1a" stroke="#333" stroke-width="1"/>
+                <circle cx="30" cy="30" r="22" fill="none" stroke="#2a2a2a" stroke-width="1.5"/>
+                <circle cx="30" cy="30" r="17" fill="none" stroke="#2a2a2a" stroke-width="1.5"/>
+                <circle cx="30" cy="30" r="12" fill="none" stroke="#2a2a2a" stroke-width="1.5"/>
+                <circle cx="30" cy="30" r="7" fill="#c0392b"/>
+                <circle cx="30" cy="30" r="2.5" fill="#1a1a1a"/>
+            </svg>
+            <svg class="vinyl" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="30" cy="30" r="29" fill="#1a1a1a" stroke="#333" stroke-width="1"/>
+                <circle cx="30" cy="30" r="22" fill="none" stroke="#2a2a2a" stroke-width="1.5"/>
+                <circle cx="30" cy="30" r="17" fill="none" stroke="#2a2a2a" stroke-width="1.5"/>
+                <circle cx="30" cy="30" r="12" fill="none" stroke="#2a2a2a" stroke-width="1.5"/>
+                <circle cx="30" cy="30" r="7" fill="#c0392b"/>
+                <circle cx="30" cy="30" r="2.5" fill="#1a1a1a"/>
+            </svg>
+        </div>
+        <div class="footer-text">
+            <p>YOU SPIN ME RIGHT ROUND | By KENNEDY WALKER | MAY 2026</p>
+            <p><a href="mailto:kennedylynnw@gmail.com">kennedylynnw@gmail.com</a></p>
+        </div>
+    </footer>
+
+    <!-- ============================================
+         BACK TO TOP BUTTON
+         - Appears automatically after scrolling down
+         - No changes needed here
+         ============================================ -->
+    <button id="back-to-top" title="Back to top">&#8593;</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
